@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <main class="split-container">
+        
+        <section class="left-pane">
+            <header class="logo">
+                <h2>Resume Flow</h2>
+            </header>
+
+            <article class="content-box">
+                <h1>Welcome Back</h1>
+                <p class="details">Enter your email and password to access your account.</p>
+                
+                <form action="index.html" class="form" id="loginForm">
+                    <label>
+                        <p class="field-label">Email / Username</p>
+                        <input type="text" id="loginInput" name="login" placeholder="Enter your username or Email." required>
+                    </label>
+                    
+                    <label class="password-container">
+                        <p class="field-label">Password</p>
+                        <input type="password" id="Password" placeholder="Enter Password." required>
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
+                    </label>
+                    
+                    <label class="remember-forgot-container">
+                        <input type="checkbox" id="remember" name="remember">
+                        Remember Me
+                        <a class="forgot" href="#">Forgot Your Password?</a>
+                    </label>
+                    
+                    <button class="submit" type="submit">Log In</button>
+                </form>
+
+                <p class="or">Or Login With</p>
+                <hr class="line">
+                
+                <p class="oauth-row">
+                    <button class="google">
+                        <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png" alt="Google Logo" width="18">
+                        Google
+                    </button>
+                    <button class="apple">
+                        <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt="Apple Logo" width="18">
+                        Apple
+                    </button>
+                </p>
+                <p class="dont">Don't Have An Account? <a href="signup.html">Register Now.</a></p>
+            </article>
+
+            <footer>
+                <p>© 2026 Resume Flow Enterprises LTD.</p>
+                <a href="#">Privacy Policy</a>
+            </footer>
+        </section>
+
+        <aside class="right-pane">
+            <section class="pane-content">
+                <h2>Build a Professional Resume using AI.</h2>
+                <p>Log in to access your Account and manage.</p>
+                <img src="https://drive.google.com/thumbnail?id=1WP12EB5L4lGUek8USouAcV7kJocgKrPU&sz=w1000" alt="ResumeFlow" class="mockup-img">
+            </section>
+        </aside>
+
+    </main>
+    <script src="js/auth.js"></script>
+</body>
+</html>

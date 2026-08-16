@@ -1,0 +1,333 @@
+/* Import Design Tokens from style.css */
+:root {
+    --bg-color: #121212;
+    --surface-color: #10121c;
+    --surface-light: #171a27;
+
+    --text-color: #f5f5f7;
+    --text-muted: #9098a8;
+
+    --accent-green: #10d99a;
+    --accent-blue: #2f8fff;
+
+    --accent-gradient: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+
+    --border-color: #1e2130;
+    --radius: 12px;
+    --max-width: 1280px;
+
+    --font-family: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background: radial-gradient(ellipse at top, #0d1a1e 0%, #060810 55%);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.split-container {
+    display: flex;
+    width: 100%;
+    max-width: var(--max-width);
+    min-height: 840px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.left-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background: var(--surface-color);
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 22px;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.content-box {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.details {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.field-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 46px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0 16px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--surface-light);
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--accent-green);
+    background-color: var(--surface-color);
+    box-shadow: 0 0 0 4px rgba(16, 217, 154, 0.15);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 45px;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 16px;
+    transition: color 0.2s;
+    z-index: 5;
+}
+
+#togglePassword:hover {
+    color: var(--accent-green);
+}
+
+.remember-forgot-container {
+    display: flex !important;
+    align-items: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 24px !important;
+}
+
+#remember {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent-green);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.forgot {
+    color: var(--accent-green);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: auto;
+    transition: color 0.2s ease;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--accent-gradient);
+    color: #06110d;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.submit:hover {
+    filter: brightness(1.05);
+    box-shadow: 0 8px 25px rgba(16, 217, 154, 0.25);
+    transform: translateY(-2px);
+}
+
+.or {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.line {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin-top: -10px;
+    margin-bottom: 24px;
+}
+
+.oauth-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.google,
+.apple {
+    flex: 1;
+    height: 44px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: var(--surface-light);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.google:hover,
+.apple:hover {
+    border-color: var(--accent-green);
+    background: var(--surface-color);
+}
+
+.dont {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.dont a {
+    color: var(--accent-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dont a:hover {
+    text-decoration: underline;
+}
+
+.left-pane footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.left-pane footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.left-pane footer a:hover {
+    color: var(--accent-green);
+    text-decoration: underline;
+}
+
+.right-pane {
+    flex: 1.1;
+    background: radial-gradient(ellipse at top right, #0d1a1e 0%, #10121c 70%);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    position: relative;
+}
+
+.pane-content {
+    max-width: 480px;
+    color: var(--text-color);
+}
+
+.pane-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.pane-content p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.mockup-img {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+    .right-pane {
+        display: none;
+    }
+}

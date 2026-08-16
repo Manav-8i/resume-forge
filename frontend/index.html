@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeFlow — Resume Builder</title>
+
+    <meta name="description"
+        content="ResumeFlow helps you create ATS-friendly professional resumes.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <nav class="nav container">
+
+            <a href="#" class="logo">ResumeFlow</a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#" data-section="dashboard">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="documents">
+                        Documents
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="templates">
+                        Templates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="applications">
+                        Applications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="shared-links">
+                        Shared Links
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-section="exports">
+                        Exports
+                    </a>
+                </li>
+
+            </ul>
+
+            <aside class="nav-cta" id="navCta">
+
+                <a href="login.html" class="btn btn-outline">
+                    Log In
+                </a>
+
+                <a href="signup.html" class="btn btn-primary">
+                    Sign Up
+                </a>
+
+            </aside>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- DASHBOARD -->
+    <!-- ================================================= -->
+
+    <main>
+
+        <section id="dashboard" class="page-section active-section">
+
+            <header class="hero container">
+
+                <p class="hero-badge">
+                    <i class="badge-dot"></i>
+                    Trusted by job seekers worldwide
+                </p>
+
+                <h1>
+                    <strong class="heading-white">
+                        Build a Resume
+                    </strong>
+
+                    <em class="heading-gradient">
+                        Recruiters Actually Notice
+                    </em>
+                </h1>
+
+                <p class="hero-subtext">
+
+                    ResumeFlow gives you clean,
+                    ATS-friendly templates and step-by-step
+                    guidance so you can create a professional
+                    resume in minutes.
+
+                </p>
+
+                <form class="hero-form" action="#" method="POST">
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email">
+
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Create My Resume
+                    </button>
+
+                </form>
+
+                <ul class="reassurance">
+
+                    <li>💳 No credit card required</li>
+
+                    <li>✅ Free forever plan</li>
+
+                    <li>⬇️ Export to PDF instantly</li>
+
+                </ul>
+
+            </header>
+
+
+            <!-- STATS -->
+
+            <section class="stats">
+
+                <article class="stat-item">
+                    <strong>50K+</strong>
+                    <small>Resumes Created</small>
+                </article>
+
+                <article class="stat-item">
+                    <strong>4.9/5</strong>
+                    <small>Average Rating</small>
+                </article>
+
+                <article class="stat-item">
+                    <strong>3x</strong>
+                    <small>More Interview Callbacks</small>
+                </article>
+
+                <article class="stat-item">
+                    <strong>25+</strong>
+                    <small>Professional Templates</small>
+                </article>
+
+            </section>
+
+
+            <!-- HOW IT WORKS -->
+
+            <section class="how-it-works container">
+
+                <h2>How It Works</h2>
+
+                <p class="section-subtext">
+                    Three simple steps to a resume you're proud of.
+                </p>
+
+                <ol class="steps-list">
+
+                    <li class="step-card">
+
+                        <mark class="step-number">1</mark>
+
+                        <h3>Pick a Template</h3>
+
+                        <p>
+                            Choose from designer-made templates
+                            built for every industry.
+                        </p>
+
+                    </li>
+
+
+                    <li class="step-card">
+
+                        <mark class="step-number">2</mark>
+
+                        <h3>Fill in Your Details</h3>
+
+                        <p>
+                            Add your experience and let smart
+                            suggestions do the heavy lifting.
+                        </p>
+
+                    </li>
+
+
+                    <li class="step-card">
+
+                        <mark class="step-number">3</mark>
+
+                        <h3>Download & Apply</h3>
+
+                        <p>
+                            Export a polished recruiter-ready
+                            PDF in one click.
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- DOCUMENTS -->
+        <!-- ================================================= -->
+
+        <section id="documents" class="page-section">
+
+            <article class="page-container">
+
+                <h1>Documents</h1>
+
+                <p class="section-subtext">
+                    Manage all your resumes and documents in one place.
+                </p>
+
+
+                <header class="document-header">
+
+                    <h2>My Documents</h2>
+
+                    <button class="btn btn-primary">
+                        + Create Resume
+                    </button>
+
+                </header>
+
+
+                <ul class="card-grid card-grid-3">
+
+                    <li class="card document-card">
+
+                        <i class="document-icon">
+                            📄
+                        </i>
+
+                        <h3>My Resume</h3>
+
+                        <p>
+                            Last edited recently
+                        </p>
+
+                        <menu class="document-actions">
+
+                            <button class="btn btn-outline">
+                                Edit
+                            </button>
+
+                            <button class="btn btn-primary">
+                                Open
+                            </button>
+
+                        </menu>
+
+                    </li>
+
+
+                    <li class="card document-card">
+
+                        <i class="document-icon">
+                            📄
+                        </i>
+
+                        <h3>Software Developer Resume</h3>
+
+                        <p>
+                            Last edited recently
+                        </p>
+
+                        <menu class="document-actions">
+
+                            <button class="btn btn-outline">
+                                Edit
+                            </button>
+
+                            <button class="btn btn-primary">
+                                Open
+                            </button>
+
+                        </menu>
+
+                    </li>
+
+
+                    <li class="card document-card add-document">
+
+                        <i class="add-icon">
+                            +
+                        </i>
+
+                        <h3>Create New Resume</h3>
+
+                        <p>
+                            Start building a new resume.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Create Resume
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- TEMPLATES -->
+        <!-- ================================================= -->
+
+        <section id="templates" class="page-section">
+
+            <article class="page-container">
+
+                <h1>Templates</h1>
+
+                <p class="section-subtext">
+                    Choose a professional template for your resume.
+                </p>
+
+
+                <ul class="card-grid card-grid-3">
+
+
+                    <!-- TEMPLATE 1 -->
+
+                    <li class="template-card">
+
+                        <figure>
+                            <img
+                                src="../images/1.jpeg"
+                                alt="Modern resume template"
+                                class="template-preview">
+                        </figure>
+
+                        <mark class="badge">
+                            Most Popular
+                        </mark>
+
+                        <h3>Modern</h3>
+
+                        <p class="role">
+                            For tech & creative roles
+                        </p>
+
+                        <ul class="details">
+
+                            <li>✓ Clean single-column layout</li>
+
+                            <li>✓ Bold section headers</li>
+
+                            <li>✓ Skill tags included</li>
+
+                        </ul>
+
+                        <button class="btn btn-primary">
+                            Use This Template
+                        </button>
+
+                    </li>
+
+
+                    <!-- TEMPLATE 2 -->
+
+                    <li class="template-card">
+
+                        <figure>
+                            <img
+                                src="../images/2.jpeg"
+                                alt="Professional resume template"
+                                class="template-preview">
+                        </figure>
+
+                        <mark class="badge">
+                            Classic
+                        </mark>
+
+                        <h3>Professional</h3>
+
+                        <p class="role">
+                            For corporate & finance roles
+                        </p>
+
+                        <ul class="details">
+
+                            <li>✓ Traditional two-column layout</li>
+
+                            <li>✓ Formal typography</li>
+
+                            <li>✓ ATS-tested formatting</li>
+
+                        </ul>
+
+                        <button class="btn btn-primary">
+                            Use This Template
+                        </button>
+
+                    </li>
+
+
+                    <!-- TEMPLATE 3 -->
+
+                    <li class="template-card">
+
+                        <figure>
+                            <img
+                                src="../images/3.jpeg"
+                                alt="Simple resume template"
+                                class="template-preview">
+                        </figure>
+
+                        <mark class="badge">
+                            Minimal
+                        </mark>
+
+                        <h3>Simple</h3>
+
+                        <p class="role">
+                            For students & fresh graduates
+                        </p>
+
+                        <ul class="details">
+
+                            <li>✓ Focus on core content</li>
+
+                            <li>✓ Easy to customize</li>
+
+                            <li>✓ Great for first resumes</li>
+
+                        </ul>
+
+                        <button class="btn btn-primary">
+                            Use This Template
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- APPLICATIONS -->
+        <!-- ================================================= -->
+
+        <section id="applications" class="page-section">
+
+            <article class="page-container">
+
+                <h1>Applications</h1>
+
+                <p class="section-subtext">
+                    Track your job applications and their progress.
+                </p>
+
+
+                <ul class="application-stats">
+
+                    <li class="card">
+                        <strong>12</strong>
+                        <small>Total Applications</small>
+                    </li>
+
+                    <li class="card">
+                        <strong>5</strong>
+                        <small>In Progress</small>
+                    </li>
+
+                    <li class="card">
+                        <strong>3</strong>
+                        <small>Interviews</small>
+                    </li>
+
+                    <li class="card">
+                        <strong>2</strong>
+                        <small>Offers</small>
+                    </li>
+
+                </ul>
+
+
+                <article class="card application-table">
+
+                    <h2>Recent Applications</h2>
+
+                    <table>
+                        <thead>
+                            <tr class="application-row header-row">
+
+                                <th>Company</th>
+
+                                <th>Position</th>
+
+                                <th>Status</th>
+
+                                <th>Date</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="application-row">
+
+                                <td>Google</td>
+
+                                <td>Frontend Developer</td>
+
+                                <td>
+                                    <mark class="status interview">
+                                        Interview
+                                    </mark>
+                                </td>
+
+                                <td><time datetime="2026-08-10">Aug 10</time></td>
+
+                            </tr>
+
+
+                            <tr class="application-row">
+
+                                <td>Microsoft</td>
+
+                                <td>Web Developer</td>
+
+                                <td>
+                                    <mark class="status pending">
+                                        Pending
+                                    </mark>
+                                </td>
+
+                                <td><time datetime="2026-08-08">Aug 8</time></td>
+
+                            </tr>
+
+
+                            <tr class="application-row">
+
+                                <td>Adobe</td>
+
+                                <td>UI Designer</td>
+
+                                <td>
+                                    <mark class="status rejected">
+                                        Rejected
+                                    </mark>
+                                </td>
+
+                                <td><time datetime="2026-08-05">Aug 5</time></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </article>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SHARED LINKS -->
+        <!-- ================================================= -->
+
+        <section id="shared-links" class="page-section">
+
+            <article class="page-container">
+
+                <h1>Shared Links</h1>
+
+                <p class="section-subtext">
+                    Manage links you've shared with recruiters.
+                </p>
+
+
+                <ul class="card-grid card-grid-2">
+
+                    <li class="card shared-link-card">
+
+                        <i class="link-icon">
+                            🔗
+                        </i>
+
+                        <h3>My Resume</h3>
+
+                        <p>
+                            resumeflow.com/r/mohit-resume
+                        </p>
+
+                        <footer class="link-info">
+
+                            <data value="24">
+                                👁 24 Views
+                            </data>
+
+                            <mark class="status-active">
+                                Active
+                            </mark>
+
+                        </footer>
+
+                        <menu class="document-actions">
+
+                            <button class="btn btn-outline">
+                                Copy Link
+                            </button>
+
+                            <button class="btn btn-primary">
+                                Manage
+                            </button>
+
+                        </menu>
+
+                    </li>
+
+
+                    <li class="card shared-link-card">
+
+                        <i class="link-icon">
+                            🔗
+                        </i>
+
+                        <h3>Developer Resume</h3>
+
+                        <p>
+                            resumeflow.com/r/developer
+                        </p>
+
+                        <footer class="link-info">
+
+                            <data value="18">
+                                👁 18 Views
+                            </data>
+
+                            <mark class="status-active">
+                                Active
+                            </mark>
+
+                        </footer>
+
+                        <menu class="document-actions">
+
+                            <button class="btn btn-outline">
+                                Copy Link
+                            </button>
+
+                            <button class="btn btn-primary">
+                                Manage
+                            </button>
+
+                        </menu>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- EXPORTS -->
+        <!-- ================================================= -->
+
+        <section id="exports" class="page-section">
+
+            <article class="page-container">
+
+                <h1>Exports</h1>
+
+                <p class="section-subtext">
+                    Download and manage your exported resumes.
+                </p>
+
+
+                <article class="card export-card">
+
+                    <i class="export-icon">
+                        📄
+                    </i>
+
+                    <header class="export-info">
+
+                        <h3>My Resume.pdf</h3>
+
+                        <p>
+                            PDF • Exported <time datetime="2026-08-15">Aug 15, 2026</time>
+                        </p>
+
+                    </header>
+
+                    <button class="btn btn-primary">
+                        Download
+                    </button>
+
+                </article>
+
+
+                <article class="card export-card">
+
+                    <i class="export-icon">
+                        📄
+                    </i>
+
+                    <header class="export-info">
+
+                        <h3>Developer Resume.pdf</h3>
+
+                        <p>
+                            PDF • Exported <time datetime="2026-08-12">Aug 12, 2026</time>
+                        </p>
+
+                    </header>
+
+                    <button class="btn btn-primary">
+                        Download
+                    </button>
+
+                </article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <article class="footer-content">
+
+                <section>
+
+                    <a href="#" class="logo">
+                        ResumeFlow
+                    </a>
+
+                    <p>
+                        Helping job seekers build resumes
+                        that get results.
+                    </p>
+
+                </section>
+
+
+                <nav>
+
+                    <h4>Product</h4>
+
+                    <a href="#" data-section="documents">
+                        Documents
+                    </a>
+
+                    <a href="#" data-section="templates">
+                        Templates
+                    </a>
+
+                </nav>
+
+
+                <nav>
+
+                    <h4>Resources</h4>
+
+                    <a href="#" data-section="applications">
+                        Applications
+                    </a>
+
+                    <a href="#" data-section="shared-links">
+                        Shared Links
+                    </a>
+
+                </nav>
+
+            </article>
+
+
+            <p class="copyright">
+                © <time id="year"></time> ResumeFlow.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
