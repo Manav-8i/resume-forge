@@ -1,0 +1,16 @@
+<article class="template-builder-container">
+  <h2>Resume Template Builder</h2>
+  <fieldset class="form-group">
+    <label for="docTitle">Document Title</label>
+    <input id="docTitle" type="text" [(ngModel)]="documentTitle" class="form-control" />
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="summary">Professional Summary</label>
+    <textarea id="summary" [(ngModel)]="summaryText" class="form-control" rows="4"></textarea>
+  </fieldset>
+
+  <button (click)="saveResume()" [disabled]="isSaving" class="btn btn-primary">
+    {{ isSaving ? 'Saving...' : 'Save Resume' }}
+  </button>
+</article>
